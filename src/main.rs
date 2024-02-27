@@ -2,9 +2,9 @@ use poketerm::app::{App, AppResult};
 use poketerm::event::{Event, EventHandler};
 use poketerm::handler::handle_key_events;
 use poketerm::tui::Tui;
-use std::io;
 use ratatui::backend::CrosstermBackend;
 use ratatui::Terminal;
+use std::io;
 
 fn main() -> AppResult<()> {
     // Create an application.
