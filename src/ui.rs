@@ -13,8 +13,8 @@ pub fn render(_app: &mut App, frame: &mut Frame) {
 
     // Split the frame into two horizontal chunks
     let chunks = Layout::default()
-        .direction(Direction::Horizontal)
-        .constraints([Constraint::Percentage(50), Constraint::Percentage(50)])
+        .direction(Direction::Vertical)
+        .constraints([Constraint::Percentage(80), Constraint::Percentage(80)])
         .split(frame_size);
 
     // Left block
