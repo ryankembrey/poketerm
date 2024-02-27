@@ -1,4 +1,7 @@
-use crate::app::{App, AppResult};
+use crate::{
+    app::{App, AppResult},
+    game::battle::Battle,
+};
 use crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
 
 /// Handles the key events and updates the state of [`App`].
@@ -13,6 +16,9 @@ pub fn handle_key_events(key_event: KeyEvent, app: &mut App) -> AppResult<()> {
             if key_event.modifiers == KeyModifiers::CONTROL {
                 app.quit();
             }
+        }
+        KeyCode::Char('b') => {
+            Battle::new();
         }
         // Other handlers you could add here.
         _ => {}
