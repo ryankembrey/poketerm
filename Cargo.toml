@@ -1,0 +1,10 @@
+[package]
+name = "poketerm"
+version = "0.1.0"
+authors = ["Ryan Kembrey <ryan.kembrey@student.uts>"]
+license = "MIT"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.27.0"
+ratatui = "0.26.0"
