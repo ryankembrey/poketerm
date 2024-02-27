@@ -21,7 +21,7 @@ pub fn render(_app: &mut App, frame: &mut Frame) {
     let left_block = Block::bordered()
         .title("Player 1")
         .title_alignment(Alignment::Center)
-        .border_type(BorderType::Thick);
+        .border_type(BorderType::Rounded);
 
     frame.render_widget(
         Paragraph::new(format!("Details here"))
@@ -35,7 +35,7 @@ pub fn render(_app: &mut App, frame: &mut Frame) {
     let right_block = Block::bordered()
         .title("Player 2")
         .title_alignment(Alignment::Center)
-        .border_type(BorderType::Thick);
+        .border_type(BorderType::Rounded);
 
     frame.render_widget(
         Paragraph::new("Details here")
