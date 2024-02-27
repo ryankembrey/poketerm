@@ -2,7 +2,7 @@ pub struct Battle {}
 
 impl Battle {
     pub fn new() {
-        todo!();
+        println!("Battle begun!!!");
     }
     pub fn quit() {
         todo!();
